@@ -1,0 +1,9 @@
+main: com.github.undefinedfunc.TestProject
+name: FuckYouJava
+version: 0
+commands:
+  heal:
+    description: Heal you
+    aliases: h
+    usage: /heal
+    
