@@ -1,5 +1,6 @@
 package com.github.undefinedfunc;
 
+import com.github.undefinedfunc.commands.Feed;
 import com.github.undefinedfunc.commands.Heal;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -14,6 +15,7 @@ public class TestProject extends JavaPlugin {
 
         Bukkit.getPluginManager().registerEvents(new HelloWorld(), this);
         getCommand("heal").setExecutor(new Heal());
+        new Feed();
     }
 
     @Override
