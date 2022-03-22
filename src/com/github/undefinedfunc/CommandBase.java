@@ -56,7 +56,7 @@ public abstract class CommandBase extends BukkitCommand implements CommandExecut
     public CommandMap getCommandMap() {
         try {
             if (Bukkit.getPluginManager() instanceof SimplePluginManager) {
-                Field field = SimplePluginManager.class.getDeclaredField("command");
+                Field field = SimplePluginManager.class.getDeclaredField("commandMap");
                 field.setAccessible(true);
 
                 return (CommandMap) field.get(Bukkit.getPluginManager());
